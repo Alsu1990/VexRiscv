@@ -1,0 +1,21 @@
+CAPI=2:
+
+name : :Alsu1990:VexRiscV:1.0
+description : VexRiscV RISC-V Core wrapper
+
+filesets:
+  full_axi4_jtag:
+    files:
+      - VexRiscvFullAxi4Jtag.v 
+    file_type: systemVerilogSource
+
+targets:
+  default:
+    filesets:
+      - full_axi4_jtag
+    generate: [full_axi4_jtag]
+
+generators:
+  full_axi4_jtag:
+    interpreter: python
+  
