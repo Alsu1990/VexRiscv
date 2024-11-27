@@ -10,7 +10,7 @@ import vexriscv.ip.{DataCacheConfig, InstructionCacheConfig}
 import vexriscv.plugin._
 import vexriscv.{VexRiscv, VexRiscvConfig, plugin}
 
-object VexRiscvAxi4WithIntegratedJtag{
+object VexRiscvAxi4Jtag{
   def main(args: Array[String]) {
     val report = SpinalVerilog{
 
